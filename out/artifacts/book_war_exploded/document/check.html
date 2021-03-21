@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        function  onclickCheck() {
+
+
+            var usernameObj = document.getElementsByName("username");
+            var usernameText = usernameObj.value;
+            var patt = /^\w{5,12}$/;
+
+
+            if(patt.test(usernameText)){
+                alert("不合法");
+            }else{
+                alert("合法");
+            }
+
+
+
+        }
+    </script>
+
+</head>
+<body>
+
+
+<input type="text" name="username">
+<button onclick="onclickCheck()">提交</button>
+
+
+
+</body>
+</html>
